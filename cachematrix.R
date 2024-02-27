@@ -6,7 +6,8 @@
 ## makeCacheMatrix creates a temp matrix to set and get the value of the matrix,
 ## and set and get the value of the inverse.
 
-makeCacheMatrix <- function(x = matrix()) { inv <- NULL
+makeCacheMatrix <- function(x = matrix()) { 
+  inv <- NULL
 set <- function(y) {
   x <<- y
   inv <<- NULL
@@ -24,11 +25,7 @@ list(set = set, get = get,
 ## if inverse has already been calced and if so, uses the cached value.
 
 
-
 cacheSolve <- function(x, ...) {
-  ## Return a matrix that is the inverse of 'x'
-}
-function(x, ...) {
   inv <- x$getInverse()
   if(!is.null(inv)) {
     message("getting cached data")
