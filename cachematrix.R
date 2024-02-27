@@ -24,8 +24,9 @@ list(set = set, get = get,
 ## if inverse has already been calced and if so, uses the cached value.
 
 
+
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+  ## Return a matrix that is the inverse of 'x'
 }
 function(x, ...) {
   inv <- x$getInverse()
