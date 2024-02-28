@@ -21,6 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
+
 ## cacheSolve calcs the inverse of the matrix we created, checking first to see
 ## if inverse has already been calced and if so, uses the cached value.
 
